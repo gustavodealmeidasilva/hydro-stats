@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/UseDev"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LandingPageHS"
+	}
+}

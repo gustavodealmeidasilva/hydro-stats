@@ -1,0 +1,86 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial,sans-serif;
+    background:#071321;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SEÇÕES */
+
+.secao{
+    padding:110px 40px;
+    text-align:center;
+}
+
+.secao h2{
+    font-size:2rem;
+    margin-bottom:35px;
+}
+
+/* PARÁGRAFOS GERAIS */
+
+.secao p{
+    font-size:1.05rem;
+    line-height:2;
+    color:#d0dbea;
+}
+
+/* FUNDO ALTERNADO */
+
+.destaque{
+    background:#0b1a2d;
+}
+
+/* RESPONSIVIDADE GERAL */
+
+@media(max-width:900px){
+
+    .secao{
+        padding:90px 25px;
+    }
+
+    .secao h2{
+        font-size:1.7rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .secao{
+        padding:70px 16px;
+    }
+
+    .secao h2{
+        font-size:1.35rem;
+        margin-bottom:24px;
+    }
+
+    .secao p{
+        font-size:.97rem;
+        line-height:1.85;
+    }
+
+}
+
+@media(max-width:380px){
+
+    .secao{
+        padding:60px 12px;
+    }
+
+}
