@@ -1,0 +1,92 @@
+/* ODS */
+
+#ods{
+    background:#0b1a2d;
+}
+
+/* LAYOUT */
+
+.ods__conteudo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+/* IMAGEM */
+
+.ods__imagem{
+    width:240px;
+    border-radius:18px;
+    flex-shrink:0;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,.35),
+        0 0 30px rgba(255,255,255,.04);
+
+    transition:.3s;
+}
+
+.ods__imagem:hover{
+    transform:translateY(-5px);
+}
+
+/* TEXTO */
+
+.ods__conteudo p{
+    flex:1;
+
+    text-align:left;
+
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(8px);
+
+    padding:30px;
+    border-radius:20px;
+
+    line-height:2;
+}
+
+/* RESPONSIVO — TABLET */
+
+@media(max-width:900px){
+
+    .ods__conteudo{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .ods__conteudo p{
+        text-align:center;
+    }
+
+    .ods__imagem{
+        width:200px;
+    }
+
+}
+
+/* RESPONSIVO — MOBILE */
+
+@media(max-width:600px){
+
+    .ods__conteudo{
+        gap:24px;
+    }
+
+    .ods__imagem{
+        width:160px;
+        border-radius:14px;
+    }
+
+    .ods__conteudo p{
+        padding:20px 16px;
+        border-radius:14px;
+        font-size:.95rem;
+        line-height:1.85;
+    }
+
+}

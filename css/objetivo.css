@@ -1,0 +1,50 @@
+/* OBJETIVO */
+
+#objetivo{
+    position:relative;
+    overflow:hidden;
+}
+
+#objetivo::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background-image:url("../images/fundo_agua_escuro.avif");
+    background-size:cover;
+    background-position:center;
+
+    opacity:.04;
+    z-index:0;
+}
+
+#objetivo > *{
+    position:relative;
+    z-index:2;
+}
+
+#objetivo p{
+    max-width:1000px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(8px);
+
+    padding:30px;
+    border-radius:20px;
+
+    line-height:2;
+    color:#d0dbea;
+}
+
+@media(max-width:600px){
+
+    #objetivo p{
+        padding:20px 16px;
+        border-radius:14px;
+        font-size:.95rem;
+        line-height:1.85;
+    }
+
+}

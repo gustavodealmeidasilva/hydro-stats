@@ -1,0 +1,117 @@
+/* HERO */
+
+.hero{
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image:url("../images/fundo_agua_escuro.avif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(3,10,20,.70);
+}
+
+.hero__conteudo{
+    position:relative;
+    z-index:2;
+
+    max-width:850px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:22px;
+    letter-spacing:1px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#d7e2ef;
+    margin-bottom:35px;
+}
+
+/* BOTÃO */
+
+.botao{
+    display:inline-block;
+
+    padding:15px 32px;
+
+    background:#1d4ed8;
+    color:white;
+
+    text-decoration:none;
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#2563eb;
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px rgba(37,99,235,.35);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:2.2rem;
+        letter-spacing:.5px;
+    }
+
+    .hero p{
+        font-size:.97rem;
+        line-height:1.8;
+        margin-bottom:28px;
+    }
+
+    .hero__conteudo{
+        padding:16px;
+    }
+
+    .botao{
+        display:block;
+        max-width:280px;
+        margin:0 auto;
+        text-align:center;
+        padding:14px 24px;
+    }
+
+}
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:1.9rem;
+    }
+
+}
