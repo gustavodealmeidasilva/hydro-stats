@@ -8,6 +8,10 @@ O HydroStats é uma solução tecnológica voltada ao acompanhamento do consumo 
 
 O projeto está alinhado ao Objetivo de Desenvolvimento Sustentável 6 (ODS 6), especialmente à meta 6.a, relacionada ao fortalecimento tecnológico e ao uso responsável dos recursos hídricos.
 
+# Link do Projeto
+
+https://gustavodealmeidasilva.github.io/hydro-stats/
+
 ## Funcionalidades
 
 * Apresentação institucional do projeto.
