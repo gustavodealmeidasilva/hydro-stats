@@ -1,0 +1,37 @@
+/* ORIENTADORES */
+
+#orientadores{
+    background:#0b1a2d;
+}
+
+/* BOTÃO INTEGRA */
+
+.integra-btn{
+    display:inline-block;
+
+    margin-top:18px;
+    padding:11px 20px;
+
+    background:linear-gradient(135deg, #1d4ed8, #2563eb 60%, #53b6ff);
+    background-size:180% 180%;
+    background-position:0% 50%;
+
+    color:white;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    font-size:.88rem;
+    font-weight:700;
+    letter-spacing:.2px;
+
+    box-shadow:0 4px 14px rgba(29,78,216,.25);
+
+    transition:transform .3s, box-shadow .3s, background-position .5s;
+}
+
+.integra-btn:hover{
+    background-position:100% 50%;
+    transform:translateY(-3px);
+    box-shadow:0 10px 26px rgba(37,99,235,.35);
+}
