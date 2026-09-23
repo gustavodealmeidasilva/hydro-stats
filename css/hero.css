@@ -1,0 +1,163 @@
+/* HERO */
+
+.hero{
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image:url("../images/fundo_agua_escuro.avif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(180deg, rgba(3,10,20,.55) 0%, rgba(3,10,20,.75) 60%, rgba(7,19,33,1) 100%);
+}
+
+.hero__conteudo{
+    position:relative;
+    z-index:2;
+
+    max-width:850px;
+    padding:20px;
+}
+
+.hero__icone{
+    display:block;
+    width:100%;
+    max-width:170px;
+    height:auto;
+    margin:0 auto 8px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,255,255,.5))
+        drop-shadow(0 0 24px rgba(255,255,255,.25));
+}
+
+.hero__texto{
+    display:block;
+    width:100%;
+    max-width:520px;
+    height:auto;
+    margin:0 auto 22px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,255,255,.5))
+        drop-shadow(0 0 24px rgba(255,255,255,.25));
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#d7e2ef;
+    margin-bottom:35px;
+    text-shadow:0 2px 12px rgba(0,0,0,.4);
+    text-align:center;
+}
+
+/* BOTÃO */
+
+.botao{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+
+    padding:16px 36px;
+
+    background:linear-gradient(135deg, #1d4ed8, #2563eb 60%, #53b6ff);
+    background-size:180% 180%;
+    background-position:0% 50%;
+
+    color:white;
+
+    text-decoration:none;
+    border-radius:14px;
+
+    font-weight:700;
+    letter-spacing:.2px;
+
+    box-shadow:0 6px 20px rgba(29,78,216,.3);
+
+    transition:transform .3s, box-shadow .3s, background-position .5s;
+}
+
+.botao:hover{
+    background-position:100% 50%;
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(37,99,235,.45);
+}
+
+.botao:active{
+    transform:translateY(-1px);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .hero__icone{
+        max-width:130px;
+    }
+
+    .hero__texto{
+        max-width:400px;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero__icone{
+        max-width:100px;
+        margin-bottom:6px;
+    }
+
+    .hero__texto{
+        max-width:300px;
+        margin-bottom:18px;
+    }
+
+    .hero p{
+        font-size:.97rem;
+        line-height:1.8;
+        margin-bottom:28px;
+    }
+
+    .hero__conteudo{
+        padding:16px;
+    }
+
+    .botao{
+        display:block;
+        max-width:280px;
+        margin:0 auto;
+        text-align:center;
+        padding:14px 24px;
+    }
+
+}
+
+@media(max-width:380px){
+
+    .hero__icone{
+        max-width:82px;
+    }
+
+    .hero__texto{
+        max-width:250px;
+    }
+
+}
