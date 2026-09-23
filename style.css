@@ -1,0 +1,148 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial,sans-serif;
+    background:#071321;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SEÇÕES */
+
+.secao{
+    padding:110px 40px;
+    text-align:center;
+}
+
+.secao h2{
+    position:relative;
+    display:inline-block;
+
+    font-size:2rem;
+    font-weight:800;
+    letter-spacing:.3px;
+    margin-bottom:45px;
+
+    background:linear-gradient(90deg, #ffffff, #9fd4ff 60%, #53b6ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.secao h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-16px;
+    transform:translateX(-50%);
+
+    width:64px;
+    height:3px;
+    border-radius:3px;
+
+    background:linear-gradient(90deg, transparent, #53b6ff, transparent);
+}
+
+/* PARÁGRAFOS GERAIS */
+
+.secao p{
+    font-size:1.05rem;
+    line-height:2;
+    color:#d0dbea;
+    text-align:justify;
+}
+
+/* FUNDO ALTERNADO */
+
+.destaque{
+    background:#0b1a2d;
+    position:relative;
+}
+
+.destaque::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background:linear-gradient(90deg, transparent, rgba(83,182,255,.25), transparent);
+}
+
+/* SELEÇÃO DE TEXTO */
+
+::selection{
+    background:rgba(83,182,255,.35);
+    color:#fff;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#071321;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1d4ed8;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#2563eb;
+}
+
+/* RESPONSIVIDADE GERAL */
+
+@media(max-width:900px){
+
+    .secao{
+        padding:90px 25px;
+    }
+
+    .secao h2{
+        font-size:1.7rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .secao{
+        padding:70px 16px;
+    }
+
+    .secao h2{
+        font-size:1.35rem;
+        margin-bottom:24px;
+    }
+
+    .secao p{
+        font-size:.97rem;
+        line-height:1.85;
+    }
+
+}
+
+@media(max-width:380px){
+
+    .secao{
+        padding:60px 12px;
+    }
+
+}
